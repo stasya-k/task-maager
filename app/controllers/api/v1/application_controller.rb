@@ -1,6 +1,6 @@
 class Api::V1::ApplicationController < Api::ApplicationController
   RANSACK_DEFAULT_SORT = 'id ASC'.freeze
-  
+
   def self.responder
     JsonResponder
   end
@@ -27,5 +27,4 @@ class Api::V1::ApplicationController < Api::ApplicationController
     per = params.fetch(:per, 10).to_i
     per > 100 ? 100 : per
   end
-
 end
