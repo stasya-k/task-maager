@@ -14,3 +14,5 @@ WebpackerReact.setup({ TaskBoard });
 
 Rails.start();
 ActiveStorage.start();
+import * as Routes from 'routes.js.erb';
+window.Routes = Routes;
